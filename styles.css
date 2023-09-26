@@ -1,0 +1,86 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.location h2 {
+    color: #c5ebfa; /* Замените на цвет, который вам нравится */
+    font-family: "Arial", sans-serif;
+}
+
+header {
+    background-color: #a8d1ec;
+    color: rgb(235, 249, 255);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.weather p {
+    font-family: "Arial", sans-serif; /* Шрифт */
+    color: #89c5ec; /* Замените на желаемый цвет текста */
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.search {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#cityInput {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://funart.top/uploads/posts/2021-04/1618512855_30-funart_pro-p-oboi-fon-svetlo-goluboi-tsvet-33.jpg');
+    background-size: cover; /* Растянуть фон на всю ширину и высоту экрана */
+    background-repeat: no-repeat; /* Запретить повторение фона */
+}
+
+#searchButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #92c8ec;
+    color: rgb(206, 235, 252);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.location {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.weather {
+    text-align: center;
+}
+
+.weather img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+/* Добавьте медиа-запросы для отзывчивого дизайна */
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+}
