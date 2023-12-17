@@ -16,7 +16,7 @@ searchButton.addEventListener('click', () => {
 });
 
 function getWeather(city) {
-    const lang = 'ru'; // Устанавливаем язык на русский
+    const lang = 'en'; // Устанавливаем язык 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&lang=${lang}`)
         .then(response => response.json())
         .then(data => {
