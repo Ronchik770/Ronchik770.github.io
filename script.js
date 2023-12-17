@@ -11,7 +11,7 @@ searchButton.addEventListener('click', () => {
     if (cityName) {
         getWeather(cityName);
     } else {
-        alert('Введите название города.');
+        alert('Enter name city.');
     }
 });
 
@@ -23,14 +23,14 @@ function getWeather(city) {
             updateWeather(data);
             cityInput.value = ''; // Очищаем поле ввода после запроса
         })
-        .catch(error => console.error('Ошибка:', error));
+        .catch(error => console.error('Error:', error));
 }
 
 function updateWeather(data) {
     locationElement.textContent = `${data.name}, ${data.sys.country}`;
     const temperatureCelsius = Math.round(data.main.temp - 273.15);
-    temperatureElement.textContent = `Температура: ${temperatureCelsius}°C`;
-    descriptionElement.textContent = `Описание: ${data.weather[0].description}`;
+    temperatureElement.textContent = `Temperature: ${temperatureCelsius}°C`;
+    descriptionElement.textContent = `Details: ${data.weather[0].description}`;
 }
 
 // Вызываем функцию getWeather() при загрузке страницы для начального прогноза (например, для Москвы)
